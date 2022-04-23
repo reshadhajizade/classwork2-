@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 200vh;
+  
+}
+.inner-span {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* animation-name: inner-span;
+    animation-duration: 4s;
+    transform: scale(2);
+     */
+}
+.inner-span:hover {
+  animation-name: inner-span;
+  animation-duration: 4s;
+  transform: scale(3);
+}
+@keyframes inner-span {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.inner-span2 {
+  width: 100px;
+  height: 100px;
+
+  animation-name: ex;
+  position: relative;
+
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+  display: inline-block;
+}
+.inner-span2:hover {
+  animation-name: ex;
+  animation-delay: 4s;
+}
+@keyframes ex {
+  from {
+    left: 0;
+  }
+  to {
+    left: 300px;
+  }
+}
+.inner-span3 {
+  transition: transform 0.2s;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.inner-span3:hover {
+  /* transform:translateX(0) */
+  transform: scale(1.1);
+}
+button {
+  padding: 10px;
+  background-color: greenyellow;
+}
+.buttonn:hover {
+  background-color: red;
+  color: white;
+}
+.inner-span4{
+     
+        width: 500px;
+    height: 100px;
+    background: red;
+   
+    transition: transform 1s linear ;
+    transform: translate(-90%);
+
+    }
+   
+.inner-span4:hover {
+    transform: translateX(0);
+}
+.inner-span5{
+    
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: red;
+        animation-name: example;
+        animation-duration:4s;
+        animation-iteration-count: infinite;
+      
+}  
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
